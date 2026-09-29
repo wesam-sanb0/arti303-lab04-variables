@@ -1,0 +1,56 @@
+==========TASK1=============
+
+20 ?- house = house.
+true.
+
+21 ?- house = abc.
+false.
+
+22 ?- edge(a,b) = edge(C,b).
+C = a.
+
+23 ?- edge(a,d) = edge(C,B).
+C = a,
+B = d.
+
+24 ?- edge(A,f(g,h)) = edge(a,B).
+A = a,
+B = f(g, h).
+
+25 ?- edge(A,A) = edge(b,c).
+false.
+
+26 ?- edge(A,A,A) = edge(b,c).
+false.
+
+27 ?- A = B, B = f.
+A = B, B = f.
+
+28 ?- A = B, B = f, A = e.
+false.
+
+
+==========TASK2=============
+
+
+30 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/WesamLab4.pl').
+true.
+
+30 ?- female(X).
+X = sara .
+
+31 ?- male(_).
+true .
+
+32 ?- parent(G, P), parent(P, faisal).
+G = ali,
+P = muhammad .
+
+33 ?- parent(ahmad, X), female(X).
+X = sara .
+
+34 ?- parent(P, ahmad), parent(P, muhammad).
+P = ali.
+
+35 ?- brother(khan, nora).
+true.
